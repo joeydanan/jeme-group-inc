@@ -157,12 +157,15 @@
           </label>
           <label>
             Phone
-            <input name="phone" type="tel" autocomplete="tel">
+            <input name="phone" type="tel" autocomplete="tel" placeholder="347-221-6055">
           </label>
-          <label class="checkbox-label">
-            <input name="smsConsent" type="checkbox" value="yes">
-            <span>I agree to receive text messages from Jeme Group Inc about advertising services. Message and data rates may apply. Message frequency varies. Reply STOP to opt out and HELP for help. Consent is not a condition of purchase.</span>
-          </label>
+          <fieldset class="sms-consent">
+            <legend>Text Message Consent</legend>
+            <label class="checkbox-label">
+              <input name="smsConsent" type="checkbox" value="yes">
+              <span>I agree to receive text messages from Jeme Group Inc about advertising services. Message and data rates may apply. Message frequency varies. Reply STOP to opt out and HELP for help. Consent is not a condition of purchase.</span>
+            </label>
+          </fieldset>
           <label>
             What are you advertising?
             <textarea name="message" rows="5" required></textarea>

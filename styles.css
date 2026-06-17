@@ -461,6 +461,20 @@ label {
   accent-color: var(--forest);
 }
 
+.sms-consent {
+  border: 1px solid rgba(47, 125, 99, 0.28);
+  border-radius: 8px;
+  padding: 16px;
+  background: #f3f7f2;
+}
+
+.sms-consent legend {
+  padding: 0 6px;
+  color: var(--forest);
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
 input,
 textarea {
   width: 100%;

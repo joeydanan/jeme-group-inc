@@ -31,7 +31,7 @@ contactForm.addEventListener("submit", (event) => {
   const data = new FormData(contactForm);
   const subject = encodeURIComponent("Jeme Group Inc campaign consultation");
   const body = encodeURIComponent(
-    `Name: ${data.get("name")}\nEmail: ${data.get("email")}\n\nCampaign goal:\n${data.get("message")}`
+    `Name: ${data.get("name")}\nEmail: ${data.get("email")}\nPhone: ${data.get("phone") || ""}\nSMS consent: ${data.get("smsConsent") === "yes" ? "Yes" : "No"}\n\nCampaign goal:\n${data.get("message")}`
   );
 
   formNote.textContent = "Opening your email app now.";
